@@ -6,14 +6,129 @@
       .product-card {
         width: 30%;
         aspect-ratio: 12/16;
+        border-radius: 10%;
       }
 
       #first-card {
-        background-color: red;
+        box-shadow: -3px 3px 15px black;
+        background-color: rgb(151, 30, 30);
+        margin: auto;
+      }
+
+      .card-img {
+        width: 100%;
+        box-shadow: 1px 1px 10px black;
+        border-radius: 10%;
+        margin: 30px 0px;
+      }
+      body {
+        background-image: url("https://www.reuters.com/resizer/v2/https%3A%2F%2Fcloudfront-us-east-2.images.arcpublishing.com%2Freuters%2FYC333JKSXFIDBPSJ5ST2T25XWE.jpg?auth=5a97cf4f8ad5e1dec6c4fd9eeb269b04f3be55c68f3f91430503bd5f024e8f93&width=4045&quality=80");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      img + figcaption {
+        color: white;
+        font-family: sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: 2px solid whitesmoke;
+        border-radius: 20%;
+      }
+      main {
+        align-content: center;
+        height: 900px;
+      }
+
+      article > p {
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      #product-des {
+        font-size: 25px;
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      #prize {
+        color: gold;
+        font-size: 35px;
+        margin-top: 0px;
+        margin-bottom: 10px;
       }
     </style>
+    <!-- cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <article class="product-card" id="first-card"></article>
+    <main>
+      <article class="product-card" id="first-card">
+        <figure>
+          <img
+            src="public/nike_shoes-removebg-preview.png"
+            alt="nike air"
+            class="card-img"
+          />
+          <figcaption>Nike X OFF-white</figcaption>
+        </figure>
+        <p id="product-des">The 10: Air Jordan 1 off-white-Chicago</p>
+        <p id="prize">$999</p>
+
+        <div
+          style="
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+          "
+        >
+          <div
+            style="
+              width: 50%;
+              background-color: black;
+              height: 100%;
+              color: whitesmoke;
+              align-items: center;
+              display: flex;
+              justify-content: center;
+              font-size: 22px;
+              font-family: sans-serif;
+              border-radius: 4px;
+              font-weight: 700;
+            "
+          >
+            Buy Now
+          </div>
+          <div
+            style="
+              width: 8%;
+              background-color: whitesmoke;
+              height: 100%;
+              color: black;
+              border-radius: 10px;
+              border: 2px solid black;
+              box-shadow: 0px 0px 10px black;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 27px;
+            "
+          >
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
